@@ -1,6 +1,6 @@
 (ns flexiana-test-task.core-test
   (:require [clojure.test :refer :all]
-            [flexiana-test-task.core :refer :all]))
+            [flexiana-test-task.scramble :refer :all]))
 
 (deftest expected-cases
   (testing "Successful inclusion of substring"
