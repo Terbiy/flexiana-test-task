@@ -70,7 +70,8 @@
   []
   (reset! server
           (http/start (http/create-server (assoc service-map
-                                            ::http/join? false)))))
+                                            ::http/join? false
+                                            ::http/allowed-origins {:allowed-origins (constantly true)})))))
 
 (defn stop-dev [] (http/stop @server))
 
